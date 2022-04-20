@@ -22,7 +22,12 @@
         }
 
         .container-page-vertical {
-            max-width: 820px;
+            max-width: 768px; /*820px;*/
+            margin: 0 auto;
+        }
+
+        .container-page-grid {
+            max-width: 768px;
             margin: 0 auto;
         }
 
@@ -85,21 +90,21 @@
         <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
             <p class="py-3"><br /></p>
             <header class="mt-auto px-3 text-center col-md-7 mx-auto blur rounded-3 shadow-lg user-select-none">
-                <img src="img/app/logo-home.png" alt="CREATIVcode logo" class="float-end d-block mt-2" style="width:70px;" />
+                <a href="/learn" class="float-end d-block mt-2"><img src="img/app/logo-home.png" alt="CREATIVcode logo" style="width:70px;" /></a>
+
                 <h1 class="lh-base text-shadow display-2 text-white ">Веб студия<br /><strong>CREATIVcode</strong></h1>
                 <p class="lead p-2 text-white">Обучение веб разработке и веб программированию в Сочи, Адлер, онлайн курсы</p>
                 <p class="lead mt-4 pb-2">
                     <a href="learn/html_css" class="btn btn-lg fw-bold border-white bg-white c-dark shadow-sm">Курс вебразработки</a>
                 </p>
             </header>
-
+         
             <div class="mt-auto d-flex">
                 <div class="flex-grow-1 d-flex" style="height:48px;">
-                    <img src="img/app/github64.svg" alt=""  />
-                    <img src="img/app/you-tube64.svg" alt="" class="px-3"/>
-                    
+                    <a rel="nofollow" href="https://github.com/creativcode-ru" title="Github репозитарий creativcode-ru" target="_blank"> <img src="img/app/github64.svg" alt="" style="width:48px;" /></a>
+                    <a class="px-3" rel="nofollow" href="https://www.youtube.com/channel/UCNgqoPWBsRvXEZIpzKcjxGA" title="Веб студия CREATIVcode, учебно видео" target="_blank"> <img src="img/app/you-tube64.svg" alt="" style="width:48px;"/></a>
                 </div>
-                <div class="d-flex justify-content-end" >
+                <div class="d-flex justify-content-end">
                     <a href="#contact-nav" class="d-block align-self-end text-decoration-none text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -116,21 +121,24 @@
             <h2 class="px-3 c-dark-indigo">Веб обучение</h2>
             <p class="px-3">
                 Обучение веб технологиям по созданию современных сайтов и веб приложений. Веб дизайн для веб программистов.
-                Обучение веб с нуля - вы можете ничего не знать о вебразработке, программировании HTML, CSS - запишитесь на наш курс вебразработки очно в Адлере или онлайн в ZOOM, подпишитесь на наши аккаунты в социальных сетях.
+                Обучение веб с нуля - вы можете ничего не знать о вебразработке, программировании HTML, CSS - запишитесь на наш курс вебразработки очно в Адлере или онлайн в ZOOM, посмотрите беспланые лекции по веб разработке и дизайну.
             </p>
 
-            <!-- * * * * * * * * * * * Галерея ссылок  -->
+            <!-- * * * * * * * * * * * Галерея ссылок class="container-page-grid" -->
             <nav>
                 <div class="row g-1">
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
-                    <div class="col-4"> <div class="p-3 bg-dark">Пользовательские внутренние отступы колонок</div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f06@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f05@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f04@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f03@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f02@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f01@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d06@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d05@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d04@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d03@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d02@2x.png" /></a></div></div>
+                    <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/d01@2x.png" /></a></div></div>
                 </div>
             </nav>
         </div>
