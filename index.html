@@ -5,11 +5,11 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS --><!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS 0d6efd -->
     <style>
         :root {
-          /*  --bs-primary: #D300FF !important;
-            --bs-primary-rgb: 211, 0, 255 !important;*/
+            --bs-primary: #D300FF !important;
+            --bs-primary-rgb: 211, 0, 255 !important;
             --bs-cyan: #0dcaf0 !important;
         }
     </style>
@@ -23,11 +23,6 @@
 
         .container-page-vertical {
             max-width: 768px; /*820px;*/
-            margin: 0 auto;
-        }
-
-        .container-page-grid {
-            max-width: 768px;
             margin: 0 auto;
         }
 
@@ -46,10 +41,14 @@
             transform: translate3d(0px, 0px, 0px); /*слой аппаратного ускорения браузера при трансформации*/
         }
 
+        .blur {
+            background: rgba(202, 253, 254, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
         .text-shadow {
             text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
         }
-
 
         .btn-text {
             font-weight: 400;
@@ -59,29 +58,22 @@
             /*text-decoration: none !important;*/
         }
 
-        .c-gray-100 {
-            color: var(--bs-gray-100);
-        }
-
-        .bg-gray-100 {
-            background-color: var(--bs-gray-100);
+       .bg-cyan-100 {
+            background-color: #F5FFFF;
         }
 
         .c-dark {
             color: #0B021E;
         }
+
         .c-dark-indigo {
             color: #381879;
         }
 
-        .c-cyan {
-            color: var(--bs-cyan);
+        .border-primary {
+            border-color: #D300FF !important;
         }
-
-        .blur {
-            background: rgba(202, 253, 254, 0.2);
-            backdrop-filter: blur(5px);
-        }
+        
     </style>
 
 </head>
@@ -124,7 +116,7 @@
                 Обучение веб с нуля - вы можете ничего не знать о вебразработке, программировании HTML, CSS - запишитесь на наш курс вебразработки очно в Адлере или онлайн в ZOOM, посмотрите беспланые лекции по веб разработке и дизайну.
             </p>
 
-            <!-- * * * * * * * * * * * Галерея ссылок class="container-page-grid" -->
+            <!-- * * * * * * * * * * * Галерея ссылок  -->
             <nav>
                 <div class="row g-1">
                     <div class="col-4"> <div><a href="#"><img class="img-fluid w-100" src="img/grid/f06@2x.png" /></a></div></div>
@@ -148,44 +140,46 @@
             <h2 class="text-center c-dark-indigo">Обучающие ресурсы</h2>
             <div class="row g-3 mt-3">
                 <div class="col-sm-6">
-                    <div class="card border-info">
-                        <svg class="card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="card border-primary">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/tg993QAOuv4" title="Курс вебразработки Мой первый сайт" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <p class="text-end mb-0"><a href="/learn" class="btn btn-outline-info rounded-pill">Перейти на ленту</a></p>
-
+                            <h5 class="card-title">"Мой первый сайт"</h5>
+                            <p class="card-text">Обучение как с нуля, так и для имеющих навыки hml css очно в Адлере или онлайн в ZOOM или. Хотите сделать свой первый сайт в интернете? - Этот курс для вас! </p>
+                            <a href="learn/html_css" class="btn btn-text text-primary bg-cyan-100">БАЗОВЫЙ КУРС</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card border-info">
-                        <svg class="card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="card border-primary">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/-AjP8jo7Pgo" title="Player One" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <a href="/learn#video1" class="btn btn-link text-decoration-none text-shadow letter-sp">ПЕРЕЙТИ к видео</a>
+                            <h5 class="card-title">Видео по вебразработке</h5>
+                            <p class="card-text">По ходу разработки на канале публикуются различные стадии изготовления веб приложения: веб дизайн, веб программирование, HTML и CSS код, инструменты дла вебразработки.</p>
+                            <a class="btn btn-text text-primary bg-cyan-100" rel="nofollow" href="https://www.youtube.com/channel/UCNgqoPWBsRvXEZIpzKcjxGA" title="Веб студия CREATIVcode, учебно видео на Ютубе" target="_blank">ЮТУБ КАНАЛ</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card border-info">
-                        <svg class="card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="card border-primary">
+                        <img class="card-img-top" src="img/learn/github-banner@2x.jpg" />
                         <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <a href="#" class="btn btn-text text-primary bg-gray-100">ПЕРЕЙТИ</a>
+                            <h5 class="card-title">Код на Гидхабе</h5>
+                            <p class="card-text">На гитхабе вы можете посмотреть код примеров, о которых речь идет в лекциях. Вы пока не работаете с Гитхабом? - записывайтесь на наш курс, и этот прекрасный ресурс для программистов станет для вас совершенно привычным, так же как и лучшее средство разработки Visual Studio 2022.</p>
+                            <a class="btn btn-text text-primary bg-cyan-100" rel="nofollow" href="https://github.com/creativcode-ru" title="CREATIVcode.ru код примеров для веб разработке на GitHub" target="_blank">GitHub</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="card border-info">
-                        <svg class="card-img-top" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777" /></svg>
+                    <div class="card border-primary">
+                        <img class="card-img-top" src="img/learn/web-design-dev@2x.jpg" />
                         <div class="card-body">
-                            <h5 class="card-title">Заголовок карточки</h5>
-                            <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
-                            <!--<p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>-->
-                            <a href="#" class="btn btn-outline-info ">Перейти куда-нибудь</a>
+                            <h5 class="card-title">Веб дизайн для веб разработчика</h5>
+                            <p class="card-text">В этом небольшом онлайн курсе изложены самые необходимые для веб разработчика сведения во веб дизайну.<br />Последовательно посмотрите эти лекции, и вы не только станете понимать дизайнеров, но и сами сможете сделать дизайн для ваших проектов.</p>
+                            <a class="btn btn-text text-primary bg-cyan-100" rel="nofollow" href="https://www.youtube.com/playlist?list=PLkV_9Im9ckHuw4R_4hSxPsypg-bGtIhH8" title="Базовые навыки веб дизайна для разработчика веб приложений." target="_blank">Онлайн лекции</a>
                         </div>
                     </div>
                 </div>
