@@ -16,6 +16,14 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="image_src" href="/img/app/first-sire-og.jpg" />
 
+    <script>
+        const isIE = !!document.documentMode;
+        //alert('==isIE:' + isIE);
+        if (isIE) {
+            window.location.href = "../../ie.html";
+        }
+    </script>
+
     <script type="application/ld+json">
         {
         "@@context": "http://schema.org",

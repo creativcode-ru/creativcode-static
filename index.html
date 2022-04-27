@@ -19,13 +19,21 @@
     <link rel="image_src" href="/img/app/home-1200x628.jpg" />
     <meta name="yandex-verification" content="d1c73d3a6364d5e4" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#19c0e6">
     <meta name="theme-color" content="#ffffff">
+
+    <script>
+        const isIE = !!document.documentMode;
+        //alert('==isIE:' + isIE);
+        if (isIE) {
+            window.location.href = "ie.html";
+        }
+    </script>
 
     <script type="application/ld+json">
         {
@@ -138,11 +146,11 @@
                     <a href="learn/html_css" class="btn btn-lg fw-bold border-white bg-white c-dark shadow-sm">Курс вебразработки</a>
                 </p>
             </header>
-         
+
             <div class="mt-auto d-flex">
                 <div class="flex-grow-1 d-flex" style="height:48px;">
                     <a rel="nofollow" href="https://github.com/creativcode-ru" title="Github репозитарий creativcode-ru" target="_blank"> <img src="img/app/github64.svg" alt="" style="width:48px;" /></a>
-                    <a class="px-3" rel="nofollow" href="https://www.youtube.com/channel/UCNgqoPWBsRvXEZIpzKcjxGA" title="Веб студия CREATIVcode, учебно видео" target="_blank"> <img src="img/app/you-tube64.svg" alt="" style="width:48px;"/></a>
+                    <a class="px-3" rel="nofollow" href="https://www.youtube.com/channel/UCNgqoPWBsRvXEZIpzKcjxGA" title="Веб студия CREATIVcode, учебно видео" target="_blank"> <img src="img/app/you-tube64.svg" alt="" style="width:48px;" /></a>
                 </div>
                 <div class="d-flex justify-content-end">
                     <a href="#contact-nav" class="d-block align-self-end text-decoration-none text-white">
@@ -171,7 +179,7 @@
                     <div class="col-4"> <div><a href="learn/#cqDzfYPaFso" title="Анимированный CSS градиент с шаблоном bootstrap cover"><img class="img-fluid w-100" src="img/grid/f05@2x.png" alt="Анимированный CSS градиент" /></a></div></div>
                     <div class="col-4"> <div><a href="learn/#IVCnKbOOhdM" title="CSS анимация кнопки"><img class="img-fluid w-100" src="img/grid/f04@2x.png" alt="CSS анимация кнопки" /></a></div></div>
                     <div class="col-4"> <div><a href="learn/#VIN-lN0X1ys" title="Несколько проектов в одном решении Visual Studio 2019"><img class="img-fluid w-100" src="img/grid/f03@2x.png" alt="Несколько проектов в Visual Studio 2019" /></a></div></div>
-                    <div class="col-4"> <div><a href="learn/#NtAxv7GMFfM" title="Инструменты веб разработки: Visual Studio и Git Hub"><img class="img-fluid w-100" src="img/grid/f02@2x.png" alt="Visual Studio и Git Hub"/></a></div></div>
+                    <div class="col-4"> <div><a href="learn/#NtAxv7GMFfM" title="Инструменты веб разработки: Visual Studio и Git Hub"><img class="img-fluid w-100" src="img/grid/f02@2x.png" alt="Visual Studio и Git Hub" /></a></div></div>
                     <div class="col-4"> <div><a href="learn/#RepNshueU7w" title="Фронтенд - приступаем к разработке"><img class="img-fluid w-100" src="img/grid/f01@2x.png" alt="Фронтенд разработка" /></a></div></div>
                     <div class="col-4"> <div><a href="learn/#RK-TN1yROsI" title=""><img class="img-fluid w-100" src="img/grid/d06@2x.png" alt="" /></a></div></div>
                     <div class="col-4"> <div><a href="learn/#065fsbyJYRE" title="Атомарный дизайн в веб разработке"><img class="img-fluid w-100" src="img/grid/d05@2x.png" alt="Атомарный дизайн" /></a></div></div>
@@ -306,6 +314,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Bootstrap в связке с Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
