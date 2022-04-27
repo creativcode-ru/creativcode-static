@@ -102,6 +102,15 @@
             backdrop-filter: blur(5px);
         }
 
+        .smooth_animate {
+            opacity: 0;
+            animation: smooth 1s forwards;
+        }
+        @keyframes smooth {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
         .text-shadow {
             text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
         }
@@ -134,7 +143,7 @@
 
 </head>
 <body>
-    <div class="container-fluid cover-img">
+    <div class="container-fluid cover-img smooth_animate">
         <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
             <p class="py-3"><br /></p>
             <header class="mt-auto px-3 text-center col-md-7 mx-auto blur rounded-3 shadow-lg user-select-none">
