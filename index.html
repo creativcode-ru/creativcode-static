@@ -33,11 +33,11 @@
         if (isIE) {
             window.location.href = "ie.html";
         }
-        //Запретить автоматическое восстановление скроллинга страницы
+        //Запретить автоматическое восстановление скроллинга страницы ... не всегда срабытывает на мобильном...
         if (history.scrollRestoration) { 
             history.scrollRestoration = 'manual';
         }
-
+        //Запретить автоматическое восстановление скроллинга страницы
         let urlToRemove = "https://creativcode.ru/learn/";
         let deletingUrl = browser.history.deleteUrl({ url: urlToRemove });
     </script>
