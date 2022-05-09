@@ -28,9 +28,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <script>
+        //Блокировка IE
         const isIE = !!document.documentMode;
         if (isIE) {
             window.location.href = "ie.html";
+        }
+        //Запретить автоматическое восстановление скроллинга страницы
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
         }
     </script>
 
@@ -184,7 +189,7 @@
     <main class="">
 
         <div class="container-page-vertical mt-5 px-1">
-            <h2 class="px-3 c-dark-indigo">Веб обучение</h2>
+            <h2 id="web-learn" class="px-3 c-dark-indigo">Веб обучение</h2>
             <p class="px-3">
                 Обучение веб технологиям по созданию современных сайтов и веб приложений. Веб дизайн для веб программистов.
                 Обучение веб с нуля - вы можете ничего не знать о вебразработке, программировании HTML, CSS - запишитесь на наш <a href="learn/html_css" title="Мой первый сайт, курс веб разработки в Адлере, Сочи">курс вебразработки</a> очно в Адлере или онлайн в ZOOM, посмотрите <a href="learn" title="Веб обучение - лента видео лекций и примеров по веб разработке и веб дизайну.">беспланые лекции</a> по веб разработке и дизайну:

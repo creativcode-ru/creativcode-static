@@ -17,10 +17,17 @@
     <link rel="image_src" href="/img/app/html-css-1200x628.jpg" />
 
     <script>
+        //Блокировка IE
         const isIE = !!document.documentMode;
         if (isIE) {
             window.location.href = "../ie.html";
         }
+        //Запретить автоматическое восстановление скроллинга страницы
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        //const scrollRestoration = history.scrollRestoration;
+        //console.log('scrollRestoration = ' + scrollRestoration);
     </script>
 
     <script type="application/ld+json">
@@ -89,15 +96,15 @@
         }
     </style>
 
-    <!-- Vue.js 3 -->
-    <script src="https://unpkg.com/vue@3"></script>
+    <!-- Vue.js 3 производстванная сборка -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
 
 </head>
 <body>
     <div class="container-page-vertical pb-5">
         <nav class="p-3">
             <div class="mb-auto">
-                <a href="../"><img src="../img/app/logo-home.png" class="img-fluid d-block mx-auto mt-3" alt="CREATIVcode logo" style="width:90px; height:90px;" /></a>
+                <a href="../#web-learn"><img src="../img/app/logo-home.png" class="img-fluid d-block mx-auto mt-3" alt="CREATIVcode logo" style="width:90px; height:90px;" /></a>
             </div>
         </nav>
         <header class="mx-auto col-md-7 text-center mt-4 user-select-none">
