@@ -123,10 +123,11 @@
             100% {opacity: 1;}
         }
 
-        .hover-opacity:hover {
+        .hover-opacity:focus:hover {
             opacity: 0.8;
         }
 
+        
         .hover-opacity:active {
             opacity: 0.5;
         }
@@ -166,7 +167,7 @@
     <div class="container-fluid cover-img smooth_animate">
         <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
             <p class="py-3"><br /></p>
-            <header class="mt-auto px-3 text-center col-md-7 mx-auto blur rounded-3 shadow-lg user-select-none">
+            <header class="mt-auto px-3 text-center col-md-7 mx-auto blur rounded-3 shadow-lg user-select-none" ondragstart="return false">
                 <a href="/learn" class="float-end d-block mt-2 hover-opacity"><img src="img/app/logo-home.png" alt="CREATIVcode logo" style="width:70px;" /></a>
 
                 <h1 class="lh-base text-shadow display-2 text-white">Веб студия<br /><strong>CREATIVcode</strong></h1>
@@ -224,7 +225,7 @@
         <div class="container-page mt-5 p-3 bg-white">
             <!-- * * * * * * * * * * * Обучающие ресурсы  -->
             <h2 id="web-razrabotka" class="text-center c-dark-indigo">Обучающие ресурсы</h2>
-            <div class="row g-3 mt-3">
+            <div class="row g-3 mt-3" ondragstart="return false">
                 <div class="col-sm-6">
                     <div class="card border-primary">
                         <div class="ratio ratio-16x9">
@@ -341,7 +342,7 @@
         <div class="container-page pt-3 text-info">
             <div class="hstack gap-3 px-3 pb-5">
                 <div>
-                    <small><a href="#" class="text-decoration-none">&copy; CREATIVcode 2015-2022 v.0.13:37</a></small>
+                    <small><a href="#" class="text-decoration-none">&copy; CREATIVcode 2015-2022 v.0.15</a></small>
                 </div>
                 <div class="ms-auto"><small>свяжитесь с нами <a class="text-info" href="mailto:creativcode@mail.ru">creativcode@mail.ru</a></small></div>
             </div>
