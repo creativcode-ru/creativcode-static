@@ -17,7 +17,9 @@
     <meta property="og:url" content="https://creativcode.ru">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="image_src" href="/img/app/home-1200x628.jpg" />
+
     <meta name="yandex-verification" content="d1c73d3a6364d5e4" />
+    <meta name="google-site-verification" content="YoQVZ5-Xl_89zIyRM705Zqbxu-5OeVeZ7FAZGk1PiE0" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -34,7 +36,7 @@
             window.location.href = "ie.html";
         }
         //Запретить автоматическое восстановление скроллинга страницы ... не всегда срабытывает на мобильном...
-        if (history.scrollRestoration) { 
+        if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
         }
         //Запретить автоматическое восстановление скроллинга страницы
@@ -119,8 +121,13 @@
         }
 
         @keyframes smooth {
-            0% {opacity: 0.2;}
-            100% {opacity: 1;}
+            0% {
+                opacity: 0.2;
+            }
+
+            100% {
+                opacity: 1;
+            }
         }
 
         .hover-opacity:focus,
@@ -128,7 +135,7 @@
             opacity: 0.8;
         }
 
-        
+
         .hover-opacity:active {
             opacity: 0.5;
         }
